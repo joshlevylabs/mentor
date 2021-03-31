@@ -1,6 +1,8 @@
 # mentor
 https://virtualenv.pypa.io/en/latest/user_guide.html#introduction}
 https://www.markdownguide.org/basic-syntax/
+https://devcenter.heroku.com/articles/django-app-configuration
+https://devcenter.heroku.com/categories/command-line
 
 
 Start Repo
@@ -26,3 +28,10 @@ Deploy to Heroku
 1. local
 2. stage environment where it will be a mirror of the production env
 3. production
+
+
+Homework:
+1 - Deploy first application
+2 - Note application or book catalogue
+3 - Incorporate database
+4 - Incorporate authentication
