@@ -17,3 +17,12 @@ def home(request):
     context = {'notes_obj':notes_obj, 'form':form}
     return render(request, 'notes.html', context)
     #return render_to_response("note.html", notes)
+
+
+def login(request):
+    context = {}
+    return render(request, 'login.html', context)
+
+def register(request):
+    context = {}
+    return render(request, 'register.html', context)
