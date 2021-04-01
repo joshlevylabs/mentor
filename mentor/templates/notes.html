@@ -6,12 +6,16 @@
  </head>
  <body>
    <h1>Notes</h1>
-   {% for notes in notes_obj %}
+   {% for poop in notes_obj %}
     <ul>
-        {{ notes.title }} | {{ notes.content }}<br>
+        {{ poop.title }} | {{ poop.content }}<br>
     </ul>
    {% endfor %}
    <br>
+   <form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit">
  
  </body>
 </html>
