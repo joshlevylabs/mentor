@@ -29,7 +29,7 @@ SECRET_KEY = 'e9n)i!zp6o!5yl)kdzh6jk)#4)oxky6qy4igtakswev2+nf2fc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','https://mentorshipvictor.herokuapp.com/']
 
 
 # Application definition
