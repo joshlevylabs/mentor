@@ -1,10 +1,10 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Note
+from .models import Notes
 
 class NoteAdmin(admin.ModelAdmin):
     class Meta:
-        model = Note
+        model = Notes
 
-admin.site.register(Note,NoteAdmin)
+admin.site.register(Notes,NoteAdmin)

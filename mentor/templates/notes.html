@@ -6,12 +6,12 @@
  </head>
  <body>
    <h1>Notes</h1>
- 
-   <ul>
-       {{ note.title }}<br>
-       {{ note.content }}<br>
-       working?
+   {% for notes in notes_obj %}
+    <ul>
+        {{ notes.title }} | {{ notes.content }}<br>
     </ul>
+   {% endfor %}
+   <br>
  
  </body>
 </html>
