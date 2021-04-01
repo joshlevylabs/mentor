@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mentor
+    container_name: mentor-web
+    command: /bin/bash -c "/code/docker/django/start.sh"
+    restart: on-failure
+    volumes:
+      - .:/code
+    ports:
+      - '8001:8000'
+    networks:
+      - mentor
+    environment:
+      DJANGO_SETTINGS_MODULE: ${DJANGO_SETTINGS_MODULE:-mentor.settings}
+networks:
+  mentor:
