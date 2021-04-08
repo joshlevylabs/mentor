@@ -20,7 +20,7 @@ def newnote(request):
         form = NoteForm(request.POST)
         if form.is_valid():
             form.save()
-        return redirect('/')
+        return redirect('/notes/')
     context = {'form':form}
     return render(request, 'newnote.html', context)
 
