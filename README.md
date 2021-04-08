@@ -3,6 +3,7 @@ https://virtualenv.pypa.io/en/latest/user_guide.html#introduction}
 https://www.markdownguide.org/basic-syntax/
 https://devcenter.heroku.com/articles/django-app-configuration
 https://devcenter.heroku.com/categories/command-line
+https://roadmap.sh/
 
 
 Start Repo
@@ -35,3 +36,17 @@ Homework:
 2 - Note application or book catalogue
 3 - Incorporate database
 4 - Incorporate authentication
+
+ORM - Object relational mapping layer: https://www.fullstackpython.com/django-orm.html
+- Layer over my database, abstraction to keep database agnostic from system to system
+
+Learn how to customize
+1 - view for listing all notes
+2 - view for creating notes
+3 - view to update notes
+4 - view to delete and confirming delete notes
+5 - create folders
+6 - put notes into different folders
+
+Blog: https://docs.djangoproject.com/en/3.1/ref/contrib/admin/
+Blog: https://simpleisbetterthancomplex.com/archive/

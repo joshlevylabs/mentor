@@ -1,0 +1,19 @@
+ <!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>Notes</title>
+ </head>
+ <body>
+   <h1>Create a note</h1>
+ 
+ <form method="POST">
+    {% csrf_token %}
+    Title:<br>
+    {{ form.title }}<br>
+    Content:<br>
+    {{ form.content }}<br>
+    <input type="submit">
+
+ </body>
+</html>
