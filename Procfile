@@ -1,1 +1,1 @@
-web: gunicorn mentor.mentor.wsgi
+web: gunicorn mentor.wsgi

@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from notes.views import home, login, register
+from mentor.apps.notes.views import home, login, register
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/',login, name='login'),
     path('register/',register, name='register'),
-    path('notes/', include('notes.urls')),
+    path('notes/', include('mentor.apps.notes.urls')),
 ]

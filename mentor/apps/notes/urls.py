@@ -1,5 +1,5 @@
 from django.urls import path
-from notes.views import home, newnote
+from mentor.apps.notes.views import home, newnote
 
 
 urlpatterns = [
