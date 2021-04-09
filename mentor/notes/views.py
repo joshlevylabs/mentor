@@ -24,6 +24,15 @@ def newnote(request):
     context = {'form':form}
     return render(request, 'newnote.html', context)
 
+def updateNote(request,pk):
+    notes_obj = Notes.objects.all(id=pk)
+    form = NoteForm(instance=notes_obj)
+    if request.method == 'POST':
+        form = NoteForm(request.POST,instance=notes_obj)
+        if form.is_valid():
+            form.save()
+        return redirect('/notes/')
+    context = {'form':form}
 
 
 def login(request):

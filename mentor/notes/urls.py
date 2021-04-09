@@ -4,5 +4,5 @@ from notes.views import home, newnote
 
 urlpatterns = [
     path('', home, name='home'),
-    path('newnote/',newnote,name='newnote')
+    path('newnote',newnote,name='newnote')
 ]
